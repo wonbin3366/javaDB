@@ -3,7 +3,7 @@ package myapp.config;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DBConn {
+public class DBConfig {
 
     public static Connection getConnection() {
         try {
@@ -16,10 +16,6 @@ public class DBConn {
             e.printStackTrace();
         }
         return null;
-    }
 
-    public static void main(String[] args) {
-        DBConn.getConnection();
     }
-
 }
